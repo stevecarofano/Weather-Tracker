@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Weather Tracker</title>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Container for content -->
+    <div class="container-fluid">
+        <!-- Jumbotron styles -->
+        <div class="jumbotron jumbotron-fluid bg-dark text-warning text-center">
+            <div class="container">
+                <h1 class="display-4">Weather Tracker</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Setting style for weather/search cards -->
+                    <div class="card-body text-center">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body bg-dark">
+                                <h6 class="card-subtitle mb-2 text-warning">City</h6>
+                                <div class="input-group mb-3">
+                                    <!-- Search field -->
+                                    <input type="text" class="form-control searchInput" placeholder="Enter City Name">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary bg-warning searchBtn" type="button"
+                                            id="button-addon2">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5-Day forecast content -->
+                <div class="col-12 text-center">
+                    <div class="card weatherEl pl-5 bg-dark text-warning justify-content-center">
+                        <h5 class="card-title mt-2 mr-5">5-Day Forecast</h5>
+                        <div class="row">
+                            <div class="col">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+
+</body>
+
+</html>
